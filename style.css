@@ -1,14 +1,41 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
+    background-color: #f4f4f4;
 }
 
-h1, h2 {
-    color: #333;
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
 }
 
-form {
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
     margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
 }
 
 label {
@@ -16,9 +43,12 @@ label {
     margin: 10px 0 5px;
 }
 
-input {
-    padding: 5px;
+input, select {
+    padding: 10px;
+    width: 100%;
     margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 button {
@@ -26,7 +56,9 @@ button {
     background-color: #5cb85c;
     color: white;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 button:hover {
@@ -35,4 +67,11 @@ button:hover {
 
 div {
     margin-top: 20px;
+}
+
+#clientesCadastrados, #produtosCadastrados, #funcionariosCadastrados, #vendasRegistradas {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fafafa;
+    border-radius: 5px;
 }
